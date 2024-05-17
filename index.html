@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Passkeys for Web</title>
-</head>
+    <script src="main.js" defer></script>
+  </head>
 
-<body>
-
-</body>
-
+  <body>
+    <form id="passkeysForm" style="display: none">
+      <section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="test@example.com" />
+      </section>
+      <section>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Example" />
+      </section>
+      <button>Create Passkeys</button>
+    </form>
+    <p>OR</p>
+    <button id="signInWithPasskeys" style="display: none">
+      Sign In with Passkeys
+    </button>
+  </body>
 </html>
